@@ -47,7 +47,7 @@
     
     [super viewDidAppear:animated];
     
-     /* EMEMPLO 2*/
+     /* EMEMPLO 2
     
     // Siempre se centra en 0 si no se configura con ninguna
     
@@ -65,11 +65,13 @@
     
     MKCoordinateRegion region = MKCoordinateRegionMake(newCoord, zoom);
     
+    
     [_map setRegion:region];
+    //[_map setRegion:region animated:YES];
     
     NSLog(@"Centro mapa posición usuario -> Latitud:%f - Longitud:%f", newCoord.latitude, newCoord.longitude);
     
-    /*  END  EJEMPLO 2 */
+      END  EJEMPLO 2 */
     
 }
 
