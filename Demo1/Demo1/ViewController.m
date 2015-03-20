@@ -19,7 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    
+    /* EJEMPLO 1
+     
     // 2. Creamos una coordenada
     CLLocationCoordinate2D newCoordenate = CLLocationCoordinate2DMake(27.00, -15.00);
     
@@ -34,6 +35,8 @@
         NSLog(@"La coordenada no es validad");
         
     }
+    
+    END EJEMPLO 1 */
     
     
     
