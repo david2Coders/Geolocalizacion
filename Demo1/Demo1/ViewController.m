@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+@import MapKit; // 1. Importar MapKit
+
 
 @interface ViewController ()
 
@@ -16,7 +18,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    
+    // 2. Creamos una coordenada
+    CLLocationCoordinate2D newCoordenate = CLLocationCoordinate2DMake(27.00, -15.00);
+    
+    // 3. Imprimimos la coordenada, primero comprobamos que es correcta
+    
+    if (CLLocationCoordinate2DIsValid(newCoordenate)) {
+        
+        NSLog(@"Latitud:%.f - Longitud:%.f",newCoordenate.latitude, newCoordenate.longitude);
+        
+    }else{
+    
+        NSLog(@"La coordenada no es validad");
+        
+    }
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
