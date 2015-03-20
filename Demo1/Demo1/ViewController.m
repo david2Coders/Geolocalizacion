@@ -12,6 +12,8 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet MKMapView *map;
+
 @end
 
 @implementation ViewController
@@ -37,6 +39,10 @@
     }
     
     END EJEMPLO 1 */
+    
+    /* EMEMPLO 2*/
+    
+    
     
     
     
