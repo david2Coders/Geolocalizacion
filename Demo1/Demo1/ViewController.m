@@ -59,7 +59,7 @@
     // Preparamos la region a mostrar
     
     CLLocationCoordinate2D newCoord = CLLocationCoordinate2DMake(17.15, -15.26);
-    MKCoordinateSpan zoom = MKCoordinateSpanMake(10.1,10.1); // Una ventana de 111km x 111km
+    MKCoordinateSpan zoom = MKCoordinateSpanMake(1,1); // Una ventana de 111km x 111km
     
     // Region = centro + span
     
