@@ -27,7 +27,7 @@
     
     if (CLLocationCoordinate2DIsValid(newCoordenate)) {
         
-        NSLog(@"Latitud:%.f - Longitud:%.f",newCoordenate.latitude, newCoordenate.longitude);
+        NSLog(@"Latitud:%f - Longitud:%f",newCoordenate.latitude, newCoordenate.longitude);
         
     }else{
     
