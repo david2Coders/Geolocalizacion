@@ -17,24 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zDb-bc-UVX">
-                                <rect key="frame" x="16" y="0.0" width="568" height="600"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gSI-6n-V4x">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zDb-bc-UVX" secondAttribute="bottom" id="PR0-KL-eFC"/>
-                            <constraint firstItem="zDb-bc-UVX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Rmd-UG-I0E"/>
-                            <constraint firstItem="zDb-bc-UVX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="iC6-2H-pVN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zDb-bc-UVX" secondAttribute="trailing" id="tcY-wg-jyI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gSI-6n-V4x" secondAttribute="trailing" constant="-16" id="gOj-5f-UBw"/>
+                            <constraint firstItem="gSI-6n-V4x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="hCg-tt-MgX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gSI-6n-V4x" secondAttribute="bottom" id="mce-3L-gka"/>
+                            <constraint firstItem="gSI-6n-V4x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="n1d-pd-6PY"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="map" destination="zDb-bc-UVX" id="diO-yp-fma"/>
+                        <outlet property="map" destination="gSI-6n-V4x" id="TcT-R3-TTm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="350" y="263"/>
         </scene>
     </scenes>
 </document>

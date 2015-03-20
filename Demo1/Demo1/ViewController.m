@@ -40,11 +40,36 @@
     
     END EJEMPLO 1 */
     
-    /* EMEMPLO 2*/
+   
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+     /* EMEMPLO 2*/
+    
+    // Siempre se centra en 0 si no se configura con ninguna
+    
+    CLLocationCoordinate2D actualCenterOfMap = _map.centerCoordinate;
+    
+    NSLog(@"Centro mapa inicial -> Latitud:%f - Longitud:%f", actualCenterOfMap.latitude, actualCenterOfMap.longitude);
     
     
+    // Preparamos la region a mostrar
     
+    CLLocationCoordinate2D newCoord = CLLocationCoordinate2DMake(17.15, -15.26);
+    MKCoordinateSpan zoom = MKCoordinateSpanMake(10.1,10.1); // Una ventana de 111km x 111km
     
+    // Region = centro + span
+    
+    MKCoordinateRegion region = MKCoordinateRegionMake(newCoord, zoom);
+    
+    [_map setRegion:region];
+    
+    NSLog(@"Centro mapa posición usuario -> Latitud:%f - Longitud:%f", newCoord.latitude, newCoord.longitude);
+    
+    /*  END  EJEMPLO 2 */
     
 }
 
